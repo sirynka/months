@@ -53,7 +53,7 @@ $(() => {
 function newMonth() {
     var rand = int(random(12));
     while(randIndex == rand) rand = int(random(12));
-    randIndex = int(random(12));
+    randIndex = rand;
     var randLang = random(['en', 'ru', 'ua']);
     var randMonth = months[randIndex][randLang];
     main.html(randMonth);
