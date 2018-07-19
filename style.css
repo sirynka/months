@@ -1,0 +1,53 @@
+body {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    user-select: none;
+}
+
+.main {
+    width: 280px;
+    height: 55px;
+    margin: auto;
+    margin-top: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;    
+    text-align: center;
+}
+
+.button {
+    width: 55px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+#ok {
+    animation-name: ok;
+    animation-duration: 0.2s;
+}
+
+#wrong {
+    animation-name: wrong;
+    animation-duration: 0.2s;
+}
+
+@keyframes ok {
+    100% {background: linear-gradient(to right,  rgb(115, 235, 82),  rgb(115, 235, 82));}
+}
+
+@keyframes wrong {
+    100% {background: linear-gradient(to right, red, red);}
+}
